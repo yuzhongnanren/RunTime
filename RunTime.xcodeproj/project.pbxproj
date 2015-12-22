@@ -14,6 +14,9 @@
 		AE62AB0B1C28F5200069A821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE62AB0A1C28F5200069A821 /* Images.xcassets */; };
 		AE62AB0E1C28F5200069A821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE62AB0C1C28F5200069A821 /* LaunchScreen.xib */; };
 		AE62AB1A1C28F5200069A821 /* RunTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62AB191C28F5200069A821 /* RunTimeTests.m */; };
+		AE62AB251C2900F90069A821 /* ZYPickImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62AB241C2900F90069A821 /* ZYPickImage.m */; };
+		AE62AB281C291DFA0069A821 /* ScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62AB271C291DFA0069A821 /* ScrollViewDelegate.m */; };
+		AE62AB2B1C2921130069A821 /* MultipleDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE62AB2A1C2921130069A821 /* MultipleDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		AE62AB131C28F5200069A821 /* RunTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE62AB181C28F5200069A821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE62AB191C28F5200069A821 /* RunTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeTests.m; sourceTree = "<group>"; };
+		AE62AB231C2900F90069A821 /* ZYPickImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPickImage.h; sourceTree = "<group>"; };
+		AE62AB241C2900F90069A821 /* ZYPickImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPickImage.m; sourceTree = "<group>"; };
+		AE62AB261C291DFA0069A821 /* ScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDelegate.h; sourceTree = "<group>"; };
+		AE62AB271C291DFA0069A821 /* ScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDelegate.m; sourceTree = "<group>"; };
+		AE62AB291C2921130069A821 /* MultipleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleDelegate.h; sourceTree = "<group>"; };
+		AE62AB2A1C2921130069A821 /* MultipleDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,12 @@
 				AE62AB021C28F5200069A821 /* AppDelegate.m */,
 				AE62AB041C28F5200069A821 /* ViewController.h */,
 				AE62AB051C28F5200069A821 /* ViewController.m */,
+				AE62AB261C291DFA0069A821 /* ScrollViewDelegate.h */,
+				AE62AB271C291DFA0069A821 /* ScrollViewDelegate.m */,
+				AE62AB231C2900F90069A821 /* ZYPickImage.h */,
+				AE62AB241C2900F90069A821 /* ZYPickImage.m */,
+				AE62AB291C2921130069A821 /* MultipleDelegate.h */,
+				AE62AB2A1C2921130069A821 /* MultipleDelegate.m */,
 				AE62AB071C28F5200069A821 /* Main.storyboard */,
 				AE62AB0A1C28F5200069A821 /* Images.xcassets */,
 				AE62AB0C1C28F5200069A821 /* LaunchScreen.xib */,
@@ -220,6 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE62AB061C28F5200069A821 /* ViewController.m in Sources */,
+				AE62AB251C2900F90069A821 /* ZYPickImage.m in Sources */,
+				AE62AB2B1C2921130069A821 /* MultipleDelegate.m in Sources */,
+				AE62AB281C291DFA0069A821 /* ScrollViewDelegate.m in Sources */,
 				AE62AB031C28F5200069A821 /* AppDelegate.m in Sources */,
 				AE62AB001C28F5200069A821 /* main.m in Sources */,
 			);
@@ -416,6 +434,7 @@
 				AE62AB1F1C28F5200069A821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE62AB201C28F5200069A821 /* Build configuration list for PBXNativeTarget "RunTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				AE62AB221C28F5200069A821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

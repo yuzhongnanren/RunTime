@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScrollViewDelegate.h
 //  RunTime
 //
 //  Created by haodai on 15/12/22.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIScrollViewDelegate>
-
+@interface ScrollViewDelegate : UIView<UIScrollViewDelegate>
 
 @end
-
