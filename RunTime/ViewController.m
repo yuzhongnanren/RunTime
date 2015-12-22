@@ -25,6 +25,7 @@
     _multipleDelegate = [MultipleDelegate new];
     _multipleDelegate.allDelegate = @[self,[ScrollViewDelegate new]];
     self.scrollView.delegate = (id<UIScrollViewDelegate>)_multipleDelegate;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -32,6 +33,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSLog(@"2");

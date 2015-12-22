@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIViewController+swizzle.h
 //  RunTime
 //
 //  Created by haodai on 15/12/22.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController <UIScrollViewDelegate>
-
+/**
+ *  黑魔法 方法交换
+ */
+@interface UIViewController (swizzle)
 
 @end
-

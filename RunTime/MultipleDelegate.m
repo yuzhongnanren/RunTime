@@ -19,7 +19,13 @@
         [self.weakRefTargets addPointer:(__bridge void *)delegate];
     }
 }
-
+/**
+ *  消息签名
+ *
+ *  @param aSelector <#aSelector description#>
+ *
+ *  @return signature
+ */
 - (NSMethodSignature*)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
     if (!signature) {
@@ -32,6 +38,11 @@
     return signature;
 }
 
+/**
+ *  消息转发
+ *
+ *  @param anInvocation
+ */
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     for (id target in self.weakRefTargets){
         if ([target respondsToSelector:anInvocation.selector]) {
@@ -39,6 +50,7 @@
         }
     }
 }
+
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) {

@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+/**
+ *  runtime 消息转发 delegate 分发给多个对象
+ */
 @interface MultipleDelegate : NSObject
 @property(nonatomic,strong)NSArray *allDelegate;
 
